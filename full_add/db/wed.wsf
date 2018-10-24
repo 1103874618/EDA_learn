@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("E:/EDA/first_vhdl/db/first_vhdl.sim.cvwf")
+VECTOR("E:/EDA/full_add/db/full_add.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 313800;
+		ZEND = 253268;
 		NUMERATOR = 845;
-		DENOMINATOR = 313800;
+		DENOMINATOR = 253268;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -38,7 +38,7 @@ VECTOR("E:/EDA/first_vhdl/db/first_vhdl.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "a1";
+		SIGNAL = "ain";
 		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
@@ -46,7 +46,7 @@ VECTOR("E:/EDA/first_vhdl/db/first_vhdl.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "b1";
+		SIGNAL = "bin";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -54,8 +54,24 @@ VECTOR("E:/EDA/first_vhdl/db/first_vhdl.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q1";
+		SIGNAL = "cin";
 		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "cout";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum";
+		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -63,13 +79,13 @@ VECTOR("E:/EDA/first_vhdl/db/first_vhdl.sim.cvwf")
 	}
 }
 
-VECTOR("E:/EDA/first_vhdl/first_vhdl.vwf")
+VECTOR("E:/EDA/full_add/full_add.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1000000;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZEND = 188600;
+		NUMERATOR = 943;
+		DENOMINATOR = 188600;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -81,7 +97,7 @@ VECTOR("E:/EDA/first_vhdl/first_vhdl.vwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "a1";
+		SIGNAL = "ain";
 		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
@@ -89,7 +105,7 @@ VECTOR("E:/EDA/first_vhdl/first_vhdl.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "b1";
+		SIGNAL = "bin";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -97,8 +113,24 @@ VECTOR("E:/EDA/first_vhdl/first_vhdl.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q1";
+		SIGNAL = "cin";
 		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "cout";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum";
+		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

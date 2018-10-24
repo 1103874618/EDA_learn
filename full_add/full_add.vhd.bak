@@ -1,0 +1,20 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ENTITY or2 IS                   --two_or
+ PORT (a,b:IN STD_LOGIC;
+         C:OUT STD_LOGIC);
+         END ENTITY or2;
+         ARCHITECTURE ful OF or2 IS
+          BEGIN
+           C<=a OR b;
+         END ARCHITECTURE ful;
+   --half_adder
+ENTITY h_adder IS
+ PORT(a,b:IN STD_LOGIC;
+     co,so:OUT STD_LOGIC);
+END ENTITY h_adder;
+ARCHITECTURE h_add_arch OF h_adder IS
+ BEGIN 
+  so<=(a OR b)AND(a NAND b);
+  co<=NOT(a NAND b);
+END ARCHITECTURE h_add_arch;

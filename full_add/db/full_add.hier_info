@@ -1,0 +1,32 @@
+|full_add
+ain => h_adder:u1.a
+bin => h_adder:u1.b
+cin => h_adder:u2.b
+cout <= o_r:u3.c
+sum <= h_adder:u2.so
+
+
+|full_add|h_adder:u1
+a => co~0.IN0
+a => so~0.IN0
+b => co~0.IN1
+b => so~0.IN1
+co <= co~0.DB_MAX_OUTPUT_PORT_TYPE
+so <= so~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_add|h_adder:u2
+a => co~0.IN0
+a => so~0.IN0
+b => co~0.IN1
+b => so~0.IN1
+co <= co~0.DB_MAX_OUTPUT_PORT_TYPE
+so <= so~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_add|o_r:u3
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
