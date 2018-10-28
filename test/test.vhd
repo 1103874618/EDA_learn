@@ -1,0 +1,23 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY test IS
+PORT(
+  SW:IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+  HEX0:OUT STD_LOGIC_VECTOR(0 TO 2)
+);
+END test;
+
+ARCHITECTURE test_arch OF test IS
+  COMPONENT five_to_one_mult_comp
+    PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+BEGIN 
+
+  M0: five_to_one_mult_comp PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), HEX0);--signal M
+
+END test_arch;

@@ -1,3 +1,4 @@
+--最终首字母为H的多路复用器
 LIBRARY ieee;
 USE ieee.STD_LOGIC_1164.all;
 
@@ -13,11 +14,11 @@ END five_to_one_mult_comp;
 ARCHITECTURE Behavior OF five_to_one_mult_comp IS
 BEGIN
     WITH S SELECT
-  M<= U WHEN "000",
-      V WHEN "001",
+  M<= Y WHEN "000",
+      X WHEN "001",
       W WHEN "010",
-      X WHEN "011",
-      Y WHEN "100",
+      V WHEN "011",
+      U WHEN "100",
       "000" WHEN OTHERS;
 
       -- SW(2 DOWNTO 0) WHEN "000",
