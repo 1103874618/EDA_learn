@@ -1,0 +1,36 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+
+ENTITY five_to_one_mult IS 
+PORT(
+       SW:IN STD_LOGIC_VECTOR(17 DOWNTO 0 );
+       LEDR: OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+       LEDG: OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+       m:BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0));
+END five_to_one_mult;
+
+ARCHITECTURE Behavior OF five_to_one_mult IS
+BEGIN
+    WITH SW(17 DOWNTO 15) SELECT
+  m<= SW(2 DOWNTO 0) WHEN "000",
+      SW(5 DOWNTO 3) WHEN "001",
+      SW(8 DOWNTO 6) WHEN "010",
+      SW(11 DOWNTO 9) WHEN "011",
+      SW(14 DOWNTO 12) WHEN "100",
+      "000" WHEN OTHERS;
+
+END Behavior;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
