@@ -1,5 +1,5 @@
 Flow report for five_to_one_mult
-Sun Oct 28 11:54:54 2018
+Sun Oct 28 17:38:02 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 28 11:54:54 2018    ;
+; Flow Status                        ; Successful - Sun Oct 28 17:38:02 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; five_to_one_mult                         ;
 ; Top-level Entity Name              ; five_to_one_mult                         ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/28/2018 11:54:43 ;
+; Start date & time ; 10/28/2018 17:37:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; five_to_one_mult    ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 123478088406500.154069888309000 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 123478088406500.154071947007668 ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; --          ; Top            ;
@@ -90,9 +90,9 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 269 MB              ; 00:00:01                           ;
 ; Fitter                  ; 00:00:04     ; 1.0                     ; 353 MB              ; 00:00:04                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 299 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 299 MB              ; 00:00:03                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 203 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:07                           ;
+; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

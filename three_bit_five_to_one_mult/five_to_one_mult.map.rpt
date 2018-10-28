@@ -1,5 +1,5 @@
 Analysis & Synthesis report for five_to_one_mult
-Sun Oct 28 11:54:44 2018
+Sun Oct 28 17:37:51 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 28 11:54:44 2018    ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 28 17:37:51 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; five_to_one_mult                         ;
 ; Top-level Entity Name              ; five_to_one_mult                         ;
@@ -210,7 +210,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Sun Oct 28 11:54:43 2018
+    Info: Processing started: Sun Oct 28 17:37:50 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off five_to_one_mult -c five_to_one_mult
 Info: Found 2 design units, including 1 entities, in source file five_to_one_mult.vhd
     Info: Found design unit 1: five_to_one_mult-Behavior
@@ -261,7 +261,7 @@ Info: Implemented 67 device resources after synthesis - the final resource count
     Info: Implemented 10 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 39 warnings
     Info: Peak virtual memory: 269 megabytes
-    Info: Processing ended: Sun Oct 28 11:54:44 2018
+    Info: Processing ended: Sun Oct 28 17:37:51 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
