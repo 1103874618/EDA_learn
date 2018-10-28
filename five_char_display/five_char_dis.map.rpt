@@ -1,5 +1,5 @@
 Analysis & Synthesis report for five_char_dis
-Sun Oct 28 21:24:30 2018
+Sun Oct 28 21:36:16 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -13,8 +13,9 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Port Connectivity Checks: "five_to_one_mult_comp:M0"
-  9. Analysis & Synthesis Messages
+  8. Port Connectivity Checks: "five_to_one_mult_comp:M1"
+  9. Port Connectivity Checks: "five_to_one_mult_comp:M0"
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -40,7 +41,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 28 21:24:30 2018    ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 28 21:36:16 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; five_char_dis                            ;
 ; Top-level Entity Name              ; five_char_dis                            ;
@@ -49,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                        ;
 ;     Dedicated logic registers      ; 0                                        ;
 ; Total registers                    ; 0                                        ;
-; Total pins                         ; 25                                       ;
+; Total pins                         ; 53                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -163,7 +164,7 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 25    ;
+; I/O pins                                    ; 53    ;
 +---------------------------------------------+-------+
 
 
@@ -172,7 +173,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |five_char_dis             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |five_char_dis      ; work         ;
+; |five_char_dis             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 53   ; 0            ; |five_char_dis      ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -193,6 +194,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "five_to_one_mult_comp:M1"                                                                                ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; ledr ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; ledg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "five_to_one_mult_comp:M0"                                                                                ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
@@ -208,7 +219,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Sun Oct 28 21:24:29 2018
+    Info: Processing started: Sun Oct 28 21:36:15 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off five_char_dis -c five_char_dis
 Info: Found 2 design units, including 1 entities, in source file ../three_bit_five_to_one_mult_comp/five_to_one_mult_comp.vhd
     Info: Found design unit 1: five_to_one_mult_comp-Behavior
@@ -220,6 +231,9 @@ Info: Found 2 design units, including 1 entities, in source file five_char_dis.v
     Info: Found design unit 1: five_char_dis-five_char_dis_arch
     Info: Found entity 1: five_char_dis
 Info: Elaborating entity "five_char_dis" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at five_char_dis.vhd(9): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at five_char_dis.vhd(10): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at five_char_dis.vhd(11): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info: Elaborating entity "five_to_one_mult_comp" for hierarchy "five_to_one_mult_comp:M0"
 Warning (10541): VHDL Signal Declaration warning at five_to_one_mult_comp.vhd(9): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at five_to_one_mult_comp.vhd(10): used implicit default value for signal "LEDG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
@@ -228,7 +242,7 @@ Warning (10620): VHDL warning at seven_seg_comp.vhd(17): comparison between uneq
 Warning (10620): VHDL warning at seven_seg_comp.vhd(16): comparison between unequal length operands always returns FALSE
 Warning (10620): VHDL warning at seven_seg_comp.vhd(15): comparison between unequal length operands always returns FALSE
 Warning (10620): VHDL warning at seven_seg_comp.vhd(14): comparison between unequal length operands always returns FALSE
-Warning: 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[6]" is stuck at VCC
     Warning (13410): Pin "HEX0[5]" is stuck at VCC
@@ -237,6 +251,34 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[2]" is stuck at VCC
     Warning (13410): Pin "HEX0[1]" is stuck at VCC
     Warning (13410): Pin "HEX0[0]" is stuck at VCC
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC
+    Warning (13410): Pin "HEX2[6]" is stuck at GND
+    Warning (13410): Pin "HEX2[5]" is stuck at GND
+    Warning (13410): Pin "HEX2[4]" is stuck at GND
+    Warning (13410): Pin "HEX2[3]" is stuck at GND
+    Warning (13410): Pin "HEX2[2]" is stuck at GND
+    Warning (13410): Pin "HEX2[1]" is stuck at GND
+    Warning (13410): Pin "HEX2[0]" is stuck at GND
+    Warning (13410): Pin "HEX3[6]" is stuck at GND
+    Warning (13410): Pin "HEX3[5]" is stuck at GND
+    Warning (13410): Pin "HEX3[4]" is stuck at GND
+    Warning (13410): Pin "HEX3[3]" is stuck at GND
+    Warning (13410): Pin "HEX3[2]" is stuck at GND
+    Warning (13410): Pin "HEX3[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[0]" is stuck at GND
+    Warning (13410): Pin "HEX4[6]" is stuck at GND
+    Warning (13410): Pin "HEX4[5]" is stuck at GND
+    Warning (13410): Pin "HEX4[4]" is stuck at GND
+    Warning (13410): Pin "HEX4[3]" is stuck at GND
+    Warning (13410): Pin "HEX4[2]" is stuck at GND
+    Warning (13410): Pin "HEX4[1]" is stuck at GND
+    Warning (13410): Pin "HEX4[0]" is stuck at GND
 Warning: Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[0]"
     Warning (15610): No output dependent on input pin "SW[1]"
@@ -256,12 +298,12 @@ Warning: Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]"
     Warning (15610): No output dependent on input pin "SW[16]"
     Warning (15610): No output dependent on input pin "SW[17]"
-Info: Implemented 25 device resources after synthesis - the final resource count might be different
+Info: Implemented 53 device resources after synthesis - the final resource count might be different
     Info: Implemented 18 input pins
-    Info: Implemented 7 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Sun Oct 28 21:24:30 2018
+    Info: Implemented 35 output pins
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 268 megabytes
+    Info: Processing ended: Sun Oct 28 21:36:16 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

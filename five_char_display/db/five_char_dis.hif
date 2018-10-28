@@ -19,39 +19,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-five_char_dis
-# storage
-db|five_char_dis.(0).cnf
-db|five_char_dis.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-five_char_dis.vhd
-77e56cf570bf94e758813453a4fd53
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-..|..|quatus|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 five_to_one_mult_comp
 # storage
 db|five_char_dis.(1).cnf
@@ -107,6 +74,7 @@ USR
 }
 # hierarchies {
 five_to_one_mult_comp:M0
+five_to_one_mult_comp:M1
 }
 # lmf
 ..|..|quatus|quartus|lmf|maxplus2.lmf
@@ -150,6 +118,40 @@ USR
 }
 # hierarchies {
 seven_seg_comp:H0
+seven_seg_comp:H1
+}
+# lmf
+..|..|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+five_char_dis
+# storage
+db|five_char_dis.(0).cnf
+db|five_char_dis.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+five_char_dis.vhd
+93f947e1f0f0fbf9b5844663de8f74d8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
 }
 # lmf
 ..|..|quatus|quartus|lmf|maxplus2.lmf
