@@ -30,1003 +30,1924 @@ Chip Device Options:
 ****************************
 
 - ATOM ------------------------
-	ATOM_NAME: SW[0] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 37
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[8]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~0	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux1~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 40
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0 FANOUTS 23
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = eeee
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 42
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: NO ITERM
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0 FANOUTS 22
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = aaee
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 44
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[14]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 46
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~2	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~3 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 47
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M0|Mux0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~3	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 50
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~0	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 52
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 54
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~2	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~3 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 55
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[13]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M0|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~3	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~4 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 57
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
+		0: [DATAA]	  SW[11]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		1: NO ITERM
 		2: NO ITERM
-		3: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[0]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~4	LIT INDEX 0 FANOUTS 4
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[0]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[1] -- NON-UNIQUE
-	Atom Hier Name: 
-	Atom Id: 58
-	Atom Type: cycloneii_io
-
-	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
-		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
-	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[1]	LIT INDEX 0 FANOUTS 0
-		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[1]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
-
-	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
-
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
-
-- ATOM ------------------------
-	ATOM_NAME: SW[2] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~4 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 59
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
+		0: [DATAA]	  SW[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		1: NO ITERM
 		2: NO ITERM
-		3: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[2]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~4	LIT INDEX 0 FANOUTS 5
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[2]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[3] -- NON-UNIQUE
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[0]~13 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 60
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[3]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[0]~13	LIT INDEX 0 FANOUTS 1
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[3]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 0040
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[4] -- NON-UNIQUE
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[0]~14 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 61
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
+		0: [DATAA]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		2: NO ITERM
 		3: NO ITERM
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[4]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[0]~14	LIT INDEX 0 FANOUTS 3
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[4]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 7777
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[5] -- NON-UNIQUE
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[0]~15 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 62
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux1~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  seven_seg_comp:H0|Dispaly[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  seven_seg_comp:H0|Dispaly[0]~14	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[5]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[0]~15	LIT INDEX 0 FANOUTS 1
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[5]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = f1f0
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[6] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~5 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 63
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux0~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[6]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~5	LIT INDEX 0 FANOUTS 3
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[6]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[7] -- NON-UNIQUE
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[6]~16 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 64
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux1~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[7]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[6]~16	LIT INDEX 0 FANOUTS 3
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[7]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[8] -- NON-UNIQUE
-	Atom Hier Name: 
-	Atom Id: 65
-	Atom Type: cycloneii_io
-
-	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
-		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
-	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[8]	LIT INDEX 0 FANOUTS 0
-		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[8]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
-
-	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
-
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
-
-- ATOM ------------------------
-	ATOM_NAME: SW[9] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~0 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 66
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
+		0: [DATAA]	  SW[9]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		1: NO ITERM
 		2: NO ITERM
-		3: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[9]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~0	LIT INDEX 0 FANOUTS 4
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[9]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[10] -- NON-UNIQUE
-	Atom Hier Name: 
-	Atom Id: 67
-	Atom Type: cycloneii_io
-
-	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
-		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
-	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[10]	LIT INDEX 0 FANOUTS 0
-		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[10]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
-
-	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
-
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
-
-- ATOM ------------------------
-	ATOM_NAME: SW[11] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~1 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 68
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
+		0: [DATAA]	  SW[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		1: NO ITERM
 		2: NO ITERM
-		3: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[11]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~1	LIT INDEX 0 FANOUTS 3
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[11]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[12] -- NON-UNIQUE
-	Atom Hier Name: 
-	Atom Id: 69
-	Atom Type: cycloneii_io
-
-	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
-		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
-	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[12]	LIT INDEX 0 FANOUTS 0
-		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[12]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
-
-	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
-
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
-
-- ATOM ------------------------
-	ATOM_NAME: SW[13] -- NON-UNIQUE
-	Atom Hier Name: 
-	Atom Id: 70
-	Atom Type: cycloneii_io
-
-	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
-		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
-	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[13]	LIT INDEX 0 FANOUTS 0
-		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[13]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
-
-	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
-
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
-
-- ATOM ------------------------
-	ATOM_NAME: SW[14] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~2 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 71
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[12]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[14]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~2	LIT INDEX 0 FANOUTS 1
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[14]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[15] -- NON-UNIQUE
-	Atom Hier Name: 
-	Atom Id: 72
-	Atom Type: cycloneii_io
-
-	INPUTS (Driven By):
-		0: NO ITERM
-		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
-		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
-	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[15]	LIT INDEX 0 FANOUTS 0
-		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[15]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
-
-	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
-
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
-
-- ATOM ------------------------
-	ATOM_NAME: SW[16] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~3 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 73
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
+		0: [DATAA]	  SW[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		1: NO ITERM
 		2: NO ITERM
-		3: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[16]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~3	LIT INDEX 0 FANOUTS 3
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[16]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
-
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
-	ATOM_NAME: SW[17] -- NON-UNIQUE
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~4 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 74
-	Atom Type: cycloneii_io
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M0|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux2~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~4	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~5 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 75
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux2~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~5	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[5]~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 76
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H0|Dispaly[6]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M0|Mux2~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[5]~17	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a8a8
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H0|Dispaly~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 77
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H0|Dispaly[6]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M0|Mux2~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly~18	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a9a9
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[2]~19 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 78
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[2]~19	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 0040
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[2]~20 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 79
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux2~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  seven_seg_comp:H0|Dispaly[2]~19	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  seven_seg_comp:H0|Dispaly[0]~14	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[2]~20	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f1f0
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H0|Dispaly[0]~21 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 80
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  seven_seg_comp:H0|Dispaly[6]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux0~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M0|Mux2~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H0|Dispaly[0]~21	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = ebeb
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 81
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux0~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux0~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux0~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 82
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M1|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux0~1	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux1~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 83
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux1~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 84
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M1|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux1~1	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~6 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 85
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[14]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~6	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~5 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 86
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[13]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~5	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly[0]~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 87
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly[0]~13	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 0040
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly[0]~14 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 88
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M1|Mux0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M1|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  seven_seg_comp:H1|Dispaly[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  seven_seg_comp:H0|Dispaly[0]~14	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly[0]~14	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f1f0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux0~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 89
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M1|Mux0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux0~2	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly[6]~15 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 90
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M1|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly[6]~15	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~6 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 91
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[12]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~6	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 92
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux2~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux2~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 93
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M1|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux2~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M1|Mux2~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 94
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M1|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M1|Mux2~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly[5]~16 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 95
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M1|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H1|Dispaly[6]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M1|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly[5]~16	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a8a8
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 96
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M1|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H1|Dispaly[6]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M1|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly~17	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a9a9
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly[2]~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 97
+	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
 		0: NO ITERM
 		1: NO ITERM
-		2: NO ITERM
-		3: NO ITERM
+		2: [DATAC]	  seven_seg_comp:H1|Dispaly[6]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M1|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		4: NO ITERM
-		5: NO ITERM
-		6: NO ITERM
-		7: NO ITERM
-		8: NO ITERM
-		9: NO ITERM
-		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	SW[17]	LIT INDEX 0 FANOUTS 0
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly[2]~18	LIT INDEX 0 FANOUTS 2
 		1: NONE
-		2: NONE
-		3: NONE
-		4: [PADIO]	SW[17]	LIT INDEX 0 FANOUTS 0
-		5: NONE
-		6: NONE
 
 	PARAMETER LIST:
-		operation_mode                 = input
-		input_register_mode            = none
-		output_register_mode           = none
-		oe_register_mode               = none
-		input_async_reset              = none
-		output_async_reset             = none
-		oe_async_reset                 = none
-		input_sync_reset               = none
-		output_sync_reset              = none
-		oe_sync_reset                  = none
-		input_power_up                 = low
-		output_power_up                = low
-		oe_power_up                    = low
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
 
-	DELAY CHAINS:
-		PAD TO CORE 0:	0
-		PAD TO CORE 1:	0
-		TCO CHAIN:	0
-		TCOE CHAIN:	0
-		PAD TO INPUT REG:	0
 
-	IO STANDARD:			3.3-V LVTTL
-	CURRENT STRENGTH:		DEFAULT
-	PCI DIODE:       		OFF
-	TERMINATION:     		OFF
-	Output Duty Cycle:		BOTH_EDGES
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H1|Dispaly[0]~19 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 98
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  seven_seg_comp:H1|Dispaly[6]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M1|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M1|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H1|Dispaly[0]~19	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = ebeb
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux0~7 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 99
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux0~7	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 100
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[8]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux0~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux0~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 101
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux0~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux0~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux0~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 102
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux0~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux1~6 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 103
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux1~6	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux1~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 104
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux1~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux1~2	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux1~3 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 105
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux1~3	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H2|Dispaly[6]~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 106
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H2|Dispaly[6]~13	LIT INDEX 0 FANOUTS 5
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H2|Dispaly[0]~14 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 107
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  seven_seg_comp:H2|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H2|Dispaly[0]~14	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M0|Mux2~7 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 108
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  SW[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M0|Mux2~7	LIT INDEX 0 FANOUTS 3
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 109
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux2~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux2~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 110
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux2~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M2|Mux2~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 111
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M2|Mux2~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H2|Dispaly[5]~15 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 112
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H2|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H2|Dispaly[5]~15	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a8a8
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H2|Dispaly~16 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 113
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H2|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H2|Dispaly~16	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a9a9
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H2|Dispaly[2]~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 114
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	  seven_seg_comp:H2|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M2|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H2|Dispaly[2]~17	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H2|Dispaly[0]~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 115
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  seven_seg_comp:H2|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H2|Dispaly[0]~18	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = ebeb
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 116
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux0~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[11]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux0~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux0~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 117
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[8]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux0~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux0~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux0~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 118
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M3|Mux0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux0~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux1~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 119
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux1~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 120
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux1~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H3|Dispaly[6]~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 121
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M3|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H3|Dispaly[6]~13	LIT INDEX 0 FANOUTS 5
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H3|Dispaly[0]~14 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 122
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  seven_seg_comp:H3|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H3|Dispaly[0]~14	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 123
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux2~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[9]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux2~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux2~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 124
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux2~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux2~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M3|Mux2~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 125
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M3|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M3|Mux2~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H3|Dispaly[5]~15 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 126
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M3|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H3|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H3|Dispaly[5]~15	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a8a8
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H3|Dispaly~16 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 127
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M3|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H3|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H3|Dispaly~16	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a9a9
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H3|Dispaly[2]~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 128
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	  seven_seg_comp:H3|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M3|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H3|Dispaly[2]~17	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H3|Dispaly[0]~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 129
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  seven_seg_comp:H3|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M3|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M3|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H3|Dispaly[0]~18	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = ebeb
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 130
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[11]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[14]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux0~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux0~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 131
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux0~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux0~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux0~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 132
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M4|Mux0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux0~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux1~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 133
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M0|Mux1~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[13]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux1~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 134
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  SW[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux1~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux1~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H4|Dispaly[6]~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 135
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M4|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H4|Dispaly[6]~13	LIT INDEX 0 FANOUTS 5
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H4|Dispaly[0]~14 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 136
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  seven_seg_comp:H4|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H4|Dispaly[0]~14	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 137
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  SW[9]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  five_to_one_mult_comp:M2|Mux1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  SW[12]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux2~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = e5e0
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux2~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 138
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M2|Mux1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M0|Mux2~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux2~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = f838
+
+
+- ATOM ------------------------
+	ATOM_NAME: five_to_one_mult_comp:M4|Mux2~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 139
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M0|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M4|Mux2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  SW[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  SW[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	five_to_one_mult_comp:M4|Mux2~2	LIT INDEX 0 FANOUTS 4
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = accc
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H4|Dispaly[5]~15 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 140
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M4|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H4|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H4|Dispaly[5]~15	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a8a8
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H4|Dispaly~16 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 141
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  five_to_one_mult_comp:M4|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  seven_seg_comp:H4|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H4|Dispaly~16	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = a9a9
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H4|Dispaly[2]~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 142
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	  seven_seg_comp:H4|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	  five_to_one_mult_comp:M4|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H4|Dispaly[2]~17	LIT INDEX 0 FANOUTS 2
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+
+
+- ATOM ------------------------
+	ATOM_NAME: seven_seg_comp:H4|Dispaly[0]~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 143
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  seven_seg_comp:H4|Dispaly[6]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  five_to_one_mult_comp:M4|Mux0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	  five_to_one_mult_comp:M4|Mux2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	seven_seg_comp:H4|Dispaly[0]~18	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = ebeb
+
 
 - ATOM ------------------------
 	ATOM_NAME: HEX0[6] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 75
+	Atom Id: 156
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H0|Dispaly[0]~15)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1077,11 +1998,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX0[5] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 76
+	Atom Id: 157
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H0|Dispaly[5]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1132,11 +2053,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX0[4] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 77
+	Atom Id: 158
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H0|Dispaly[5]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1187,11 +2108,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX0[3] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 78
+	Atom Id: 159
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H0|Dispaly~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1242,11 +2163,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX0[2] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 79
+	Atom Id: 160
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H0|Dispaly[2]~20)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1297,11 +2218,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX0[1] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 80
+	Atom Id: 161
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H0|Dispaly[2]~20)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1352,11 +2273,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX0[0] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 81
+	Atom Id: 162
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H0|Dispaly[0]~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1407,11 +2328,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[6] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 82
+	Atom Id: 163
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H1|Dispaly[0]~14)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1462,11 +2383,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[5] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 83
+	Atom Id: 164
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H1|Dispaly[5]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1517,11 +2438,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[4] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 84
+	Atom Id: 165
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H1|Dispaly[5]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1572,11 +2493,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[3] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 85
+	Atom Id: 166
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H1|Dispaly~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1627,11 +2548,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[2] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 86
+	Atom Id: 167
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H1|Dispaly[2]~18)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1682,11 +2603,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[1] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 87
+	Atom Id: 168
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H1|Dispaly[2]~18)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1737,11 +2658,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX1[0] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 88
+	Atom Id: 169
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H1|Dispaly[0]~19	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1792,11 +2713,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[6] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 89
+	Atom Id: 170
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H2|Dispaly[0]~14)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1847,11 +2768,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[5] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 90
+	Atom Id: 171
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H2|Dispaly[5]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1902,11 +2823,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[4] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 91
+	Atom Id: 172
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H2|Dispaly[5]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -1957,11 +2878,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[3] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 92
+	Atom Id: 173
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H2|Dispaly~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2012,11 +2933,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[2] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 93
+	Atom Id: 174
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H2|Dispaly[2]~17)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2067,11 +2988,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[1] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 94
+	Atom Id: 175
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H2|Dispaly[2]~17)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2122,11 +3043,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX2[0] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 95
+	Atom Id: 176
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H2|Dispaly[0]~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2177,11 +3098,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[6] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 96
+	Atom Id: 177
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H3|Dispaly[0]~14)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2232,11 +3153,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[5] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 97
+	Atom Id: 178
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H3|Dispaly[5]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2287,11 +3208,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[4] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 98
+	Atom Id: 179
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H3|Dispaly[5]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2342,11 +3263,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[3] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 99
+	Atom Id: 180
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H3|Dispaly~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2397,11 +3318,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[2] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 100
+	Atom Id: 181
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H3|Dispaly[2]~17)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2452,11 +3373,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[1] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 101
+	Atom Id: 182
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H3|Dispaly[2]~17)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2507,11 +3428,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX3[0] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 102
+	Atom Id: 183
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H3|Dispaly[0]~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2562,11 +3483,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[6] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 103
+	Atom Id: 184
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H4|Dispaly[0]~14)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2617,11 +3538,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[5] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 104
+	Atom Id: 185
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H4|Dispaly[5]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2672,11 +3593,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[4] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 105
+	Atom Id: 186
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H4|Dispaly[5]~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2727,11 +3648,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[3] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 106
+	Atom Id: 187
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H4|Dispaly~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2782,11 +3703,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[2] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 107
+	Atom Id: 188
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H4|Dispaly[2]~17)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2837,11 +3758,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[1] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 108
+	Atom Id: 189
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  !(seven_seg_comp:H4|Dispaly[2]~17)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2892,11 +3813,11 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: HEX4[0] -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 109
+	Atom Id: 190
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  seven_seg_comp:H4|Dispaly[0]~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -2945,9 +3866,999 @@ Chip Device Options:
 	Output Duty Cycle:		BOTH_EDGES
 
 - ATOM ------------------------
+	ATOM_NAME: SW[8] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 191
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[8]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[8]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[17] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 192
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[17]	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[17]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[15] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 193
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[15]	LIT INDEX 0 FANOUTS 21
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[15]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[16] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 194
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[16]	LIT INDEX 0 FANOUTS 21
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[16]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[14] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 195
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[14]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[14]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 196
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[2]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[2]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 197
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[5]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[5]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[13] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 198
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[13]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[13]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 199
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[7]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[7]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 200
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[1]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[1]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 201
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[4]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[4]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[11] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 202
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[11]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[11]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[10] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 203
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[10]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[10]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[9] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 204
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[9]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[9]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 205
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[6]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[6]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[12] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 206
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[12]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[12]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 207
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[0]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[0]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
+	ATOM_NAME: SW[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 208
+	Atom Type: cycloneii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	SW[3]	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: [PADIO]	SW[3]	LIT INDEX 0 FANOUTS 0
+		5: NONE
+		6: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		BOTH_EDGES
+
+- ATOM ------------------------
 	ATOM_NAME: ~QUARTUS_CREATED_GND~I -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 110
+	Atom Id: 209
 	Atom Type: cycloneii_lcell_comb
 
 	INPUTS (Driven By):
@@ -2967,7 +4878,7 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: ~ASDO~ -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 111
+	Atom Id: 210
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
@@ -3022,7 +4933,7 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: ~nCSO~ -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 112
+	Atom Id: 211
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
@@ -3077,7 +4988,7 @@ Chip Device Options:
 - ATOM ------------------------
 	ATOM_NAME: ~LVDS150p/nCEO~ -- NON-UNIQUE
 	Atom Hier Name: 
-	Atom Id: 113
+	Atom Id: 212
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):

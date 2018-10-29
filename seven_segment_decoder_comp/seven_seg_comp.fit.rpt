@@ -1,5 +1,5 @@
 Fitter report for seven_seg_comp
-Sun Oct 28 19:24:46 2018
+Mon Oct 29 10:02:03 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -63,15 +63,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 28 19:24:46 2018    ;
+; Fitter Status                      ; Successful - Mon Oct 29 10:02:03 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; seven_seg_comp                           ;
 ; Top-level Entity Name              ; seven_seg_comp                           ;
 ; Family                             ; Cyclone II                               ;
 ; Device                             ; EP2C35F672C6                             ;
 ; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 2 / 33,216 ( < 1 % )                     ;
-;     Total combinational functions  ; 2 / 33,216 ( < 1 % )                     ;
+; Total logic elements               ; 5 / 33,216 ( < 1 % )                     ;
+;     Total combinational functions  ; 5 / 33,216 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                       ;
 ; Total registers                    ; 0                                        ;
 ; Total pins                         ; 10 / 475 ( 2 % )                         ;
@@ -140,12 +140,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.33        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2 processors           ; < 0.1%      ;
+;     2 processors           ;  20.0%      ;
 +----------------------------+-------------+
 
 
@@ -155,8 +155,8 @@ applicable agreement for further details.
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 12 ( 0.00 % )  ;
-;     -- Achieved         ; 0 / 12 ( 0.00 % )  ;
+;     -- Requested        ; 0 / 15 ( 0.00 % )  ;
+;     -- Achieved         ; 0 / 15 ( 0.00 % )  ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -178,7 +178,7 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 12      ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 15      ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -193,19 +193,19 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 2 / 33,216 ( < 1 % ) ;
-;     -- Combinational with no register       ; 2                    ;
+; Total logic elements                        ; 5 / 33,216 ( < 1 % ) ;
+;     -- Combinational with no register       ; 5                    ;
 ;     -- Register only                        ; 0                    ;
 ;     -- Combinational with a register        ; 0                    ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
 ;     -- 4 input functions                    ; 0                    ;
-;     -- 3 input functions                    ; 0                    ;
+;     -- 3 input functions                    ; 3                    ;
 ;     -- <=2 input functions                  ; 2                    ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 2                    ;
+;     -- normal mode                          ; 5                    ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers*                            ; 0 / 34,593 ( 0 % )   ;
@@ -229,12 +229,12 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%         ;
-; Maximum fan-out node                        ; C[2]                 ;
-; Maximum fan-out                             ; 3                    ;
-; Highest non-global fan-out signal           ; C[2]                 ;
-; Highest non-global fan-out                  ; 3                    ;
-; Total fan-out                               ; 9                    ;
-; Average fan-out                             ; 0.60                 ;
+; Maximum fan-out node                        ; C[1]                 ;
+; Maximum fan-out                             ; 5                    ;
+; Highest non-global fan-out signal           ; C[1]                 ;
+; Highest non-global fan-out                  ; 5                    ;
+; Total fan-out                               ; 20                   ;
+; Average fan-out                             ; 1.11                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -245,9 +245,9 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; C[0] ; C13   ; 3        ; 31           ; 36           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; C[1] ; C6    ; 3        ; 1            ; 36           ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; C[2] ; D13   ; 3        ; 31           ; 36           ; 3           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; C[0] ; B11   ; 3        ; 29           ; 36           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; C[1] ; C13   ; 3        ; 31           ; 36           ; 2           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; C[2] ; D13   ; 3        ; 31           ; 36           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -256,30 +256,30 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
-; Dispaly[0] ; A4    ; 3        ; 1            ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; Dispaly[1] ; B2    ; 2        ; 0            ; 34           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; Dispaly[2] ; B3    ; 2        ; 0            ; 34           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; Dispaly[3] ; E5    ; 2        ; 0            ; 34           ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; Dispaly[4] ; AE19  ; 7        ; 48           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; Dispaly[5] ; B18   ; 4        ; 46           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; Dispaly[6] ; E12   ; 3        ; 24           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[0] ; F20   ; 5        ; 65           ; 34           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[1] ; AA12  ; 8        ; 29           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[2] ; Y12   ; 8        ; 29           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[3] ; C12   ; 3        ; 29           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[4] ; B12   ; 3        ; 29           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[5] ; J11   ; 3        ; 27           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; Dispaly[6] ; C11   ; 3        ; 29           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 
 
-+----------------------------------------------------------+
-; I/O Bank Usage                                           ;
-+----------+----------------+---------------+--------------+
-; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
-+----------+----------------+---------------+--------------+
-; 1        ; 0 / 64 ( 0 % ) ; 3.3V          ; --           ;
-; 2        ; 5 / 59 ( 8 % ) ; 3.3V          ; --           ;
-; 3        ; 5 / 56 ( 9 % ) ; 3.3V          ; --           ;
-; 4        ; 1 / 58 ( 2 % ) ; 3.3V          ; --           ;
-; 5        ; 0 / 65 ( 0 % ) ; 3.3V          ; --           ;
-; 6        ; 1 / 59 ( 2 % ) ; 3.3V          ; --           ;
-; 7        ; 1 / 58 ( 2 % ) ; 3.3V          ; --           ;
-; 8        ; 0 / 56 ( 0 % ) ; 3.3V          ; --           ;
-+----------+----------------+---------------+--------------+
++-----------------------------------------------------------+
+; I/O Bank Usage                                            ;
++----------+-----------------+---------------+--------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
++----------+-----------------+---------------+--------------+
+; 1        ; 0 / 64 ( 0 % )  ; 3.3V          ; --           ;
+; 2        ; 2 / 59 ( 3 % )  ; 3.3V          ; --           ;
+; 3        ; 7 / 56 ( 13 % ) ; 3.3V          ; --           ;
+; 4        ; 0 / 58 ( 0 % )  ; 3.3V          ; --           ;
+; 5        ; 1 / 65 ( 2 % )  ; 3.3V          ; --           ;
+; 6        ; 1 / 59 ( 2 % )  ; 3.3V          ; --           ;
+; 7        ; 0 / 58 ( 0 % )  ; 3.3V          ; --           ;
+; 8        ; 2 / 56 ( 4 % )  ; 3.3V          ; --           ;
++----------+-----------------+---------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -289,7 +289,7 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 +----------+------------+----------+------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; A2       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A3       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; A4       ; 484        ; 3        ; Dispaly[0]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A4       ; 484        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A5       ; 482        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A6       ; 479        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A7       ; 465        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -322,7 +322,7 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; AA9      ; 152        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA10     ; 153        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA11     ; 155        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA12     ; 179        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA12     ; 179        ; 8        ; Dispaly[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA13     ; 192        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA14     ; 194        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA15     ; 197        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -433,7 +433,7 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; AE16     ; 200        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE17     ; 206        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE18     ; 212        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE19     ; 214        ; 7        ; Dispaly[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE19     ; 214        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE20     ; 224        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE21     ; 228        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE22     ; 236        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -466,8 +466,8 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; AF24     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF25     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B2       ; 2          ; 2        ; Dispaly[1]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; B3       ; 3          ; 2        ; Dispaly[2]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B2       ; 2          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; B3       ; 3          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; B4       ; 483        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B5       ; 481        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B6       ; 480        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -475,14 +475,14 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; B8       ; 458        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B9       ; 452        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B10      ; 448        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B11      ; 435        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B12      ; 433        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B11      ; 435        ; 3        ; C[0]                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 433        ; 3        ; Dispaly[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ; 429        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B14      ; 428        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B15      ; 420        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B16      ; 419        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B17      ; 411        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B18      ; 405        ; 4        ; Dispaly[5]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B18      ; 405        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B19      ; 393        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B20      ; 389        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B21      ; 381        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -496,14 +496,14 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; C3       ; 7          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; C4       ; 478        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C5       ; 486        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C6       ; 485        ; 3        ; C[1]                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C6       ; 485        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C7       ; 468        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C8       ; 463        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C9       ; 459        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C11      ; 436        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C12      ; 434        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C13      ; 431        ; 3        ; C[0]                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 436        ; 3        ; Dispaly[6]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C12      ; 434        ; 3        ; Dispaly[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C13      ; 431        ; 3        ; C[1]                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C16      ; 418        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -547,14 +547,14 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; E2       ; 19         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E3       ; 0          ; 2        ; ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; E4       ;            ;          ; GND_PLL3                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E5       ; 4          ; 2        ; Dispaly[3]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E5       ; 4          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E6       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E7       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E8       ; 474        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E10      ; 453        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E12      ; 444        ; 3        ; Dispaly[6]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E12      ; 444        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E13      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E15      ; 416        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -588,7 +588,7 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; F17      ; 401        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F18      ; 398        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F19      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F20      ; 372        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; F20      ; 372        ; 5        ; Dispaly[0]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F21      ; 371        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; F23      ; 353        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -657,7 +657,7 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; J8       ; 16         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J9       ; 475        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J10      ; 438        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J11      ; 437        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; J11      ; 437        ; 3        ; Dispaly[5]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J12      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J13      ; 442        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J14      ; 441        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -944,7 +944,7 @@ The pin-out file can be found in E:/EDA/seven_segment_decoder_comp/seven_seg_com
 ; Y9       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y10      ; 146        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y11      ; 156        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y12      ; 180        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y12      ; 180        ; 8        ; Dispaly[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y13      ; 193        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y14      ; 195        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y15      ; 196        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1005,7 +1005,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |seven_seg_comp            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 10   ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |seven_seg_comp     ; work         ;
+; |seven_seg_comp            ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 10   ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |seven_seg_comp     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1022,9 +1022,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Dispaly[2] ; Output   ; --            ; --            ; --                    ; --  ;
 ; Dispaly[1] ; Output   ; --            ; --            ; --                    ; --  ;
 ; Dispaly[0] ; Output   ; --            ; --            ; --                    ; --  ;
-; C[0]       ; Input    ; 0             ; 0             ; --                    ; --  ;
+; C[1]       ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; C[2]       ; Input    ; 0             ; 0             ; --                    ; --  ;
-; C[1]       ; Input    ; 6             ; 6             ; --                    ; --  ;
+; C[0]       ; Input    ; 6             ; 6             ; --                    ; --  ;
 +------------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1033,12 +1033,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; C[0]                ;                   ;         ;
-; C[2]                ;                   ;         ;
 ; C[1]                ;                   ;         ;
-;      - Equal3~0     ; 1                 ; 6       ;
-;      - Dispaly~12   ; 1                 ; 6       ;
-;      - Dispaly[0]   ; 1                 ; 6       ;
+; C[2]                ;                   ;         ;
+; C[0]                ;                   ;         ;
+;      - Dispaly~13   ; 0                 ; 6       ;
+;      - Dispaly~14   ; 0                 ; 6       ;
+;      - Dispaly~15   ; 0                 ; 6       ;
+;      - Dispaly~16   ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
@@ -1047,39 +1048,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------+--------------------+
 ; Name       ; Fan-Out            ;
 +------------+--------------------+
-; C[1]       ; 3                  ;
-; C[2]       ; 3                  ;
-; Dispaly~12 ; 2                  ;
-; Equal3~0   ; 1                  ;
+; C[1]       ; 5                  ;
+; C[0]       ; 4                  ;
+; C[2]       ; 4                  ;
+; Dispaly~15 ; 2                  ;
+; Dispaly~13 ; 2                  ;
+; Dispaly~16 ; 1                  ;
+; Dispaly~14 ; 1                  ;
+; Equal4~0   ; 1                  ;
 +------------+--------------------+
 
 
-+---------------------------------------------------+
-; Interconnect Usage Summary                        ;
-+----------------------------+----------------------+
-; Interconnect Resource Type ; Usage                ;
-+----------------------------+----------------------+
-; Block interconnects        ; 6 / 94,460 ( < 1 % ) ;
-; C16 interconnects          ; 1 / 3,315 ( < 1 % )  ;
-; C4 interconnects           ; 4 / 60,840 ( < 1 % ) ;
-; Direct links               ; 2 / 94,460 ( < 1 % ) ;
-; Global clocks              ; 0 / 16 ( 0 % )       ;
-; Local interconnects        ; 0 / 33,216 ( 0 % )   ;
-; R24 interconnects          ; 2 / 3,091 ( < 1 % )  ;
-; R4 interconnects           ; 1 / 81,294 ( < 1 % ) ;
-+----------------------------+----------------------+
++----------------------------------------------------+
+; Interconnect Usage Summary                         ;
++----------------------------+-----------------------+
+; Interconnect Resource Type ; Usage                 ;
++----------------------------+-----------------------+
+; Block interconnects        ; 9 / 94,460 ( < 1 % )  ;
+; C16 interconnects          ; 0 / 3,315 ( 0 % )     ;
+; C4 interconnects           ; 16 / 60,840 ( < 1 % ) ;
+; Direct links               ; 0 / 94,460 ( 0 % )    ;
+; Global clocks              ; 0 / 16 ( 0 % )        ;
+; Local interconnects        ; 0 / 33,216 ( 0 % )    ;
+; R24 interconnects          ; 1 / 3,091 ( < 1 % )   ;
+; R4 interconnects           ; 6 / 81,294 ( < 1 % )  ;
++----------------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 2.00) ; Number of LABs  (Total = 1) ;
+; Number of Logic Elements  (Average = 5.00) ; Number of LABs  (Total = 1) ;
 +--------------------------------------------+-----------------------------+
 ; 1                                          ; 0                           ;
-; 2                                          ; 1                           ;
+; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
+; 5                                          ; 1                           ;
 ; 6                                          ; 0                           ;
 ; 7                                          ; 0                           ;
 ; 8                                          ; 0                           ;
@@ -1097,33 +1102,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 2.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 5.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 2.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 5.00) ; Number of LABs  (Total = 1) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
-; 2                                               ; 1                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 2.00) ; Number of LABs  (Total = 1) ;
+; Number of Distinct Inputs  (Average = 3.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1182,11 +1194,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Auto Fit Point 1 - Fit Attempt 1                                 ; ff         ;
 ; Mid Wire Use - Fit Attempt 1                                     ; 0          ;
 ; Mid Slack - Fit Attempt 1                                        ; 2147483639 ;
-; Internal Atom Count - Fit Attempt 1                              ; 3          ;
-; LE/ALM Count - Fit Attempt 1                                     ; 3          ;
+; Internal Atom Count - Fit Attempt 1                              ; 6          ;
+; LE/ALM Count - Fit Attempt 1                                     ; 6          ;
 ; LAB Count - Fit Attempt 1                                        ; 2          ;
-; Outputs per Lab - Fit Attempt 1                                  ; 1.000      ;
-; Inputs per LAB - Fit Attempt 1                                   ; 1.000      ;
+; Outputs per Lab - Fit Attempt 1                                  ; 2.500      ;
+; Inputs per LAB - Fit Attempt 1                                   ; 1.500      ;
 ; Global Inputs per LAB - Fit Attempt 1                            ; 0.000      ;
 ; LAB Constraint 'non-global clock + sync load' - Fit Attempt 1    ; 0:2        ;
 ; LAB Constraint 'non-global controls' - Fit Attempt 1             ; 0:2        ;
@@ -1209,49 +1221,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+------------+
 
 
++-------------------------------------------------+
+; Advanced Data - Placement                       ;
++------------------------------------+------------+
+; Name                               ; Value      ;
++------------------------------------+------------+
+; Auto Fit Point 2 - Fit Attempt 1   ; ff         ;
+; Early Wire Use - Fit Attempt 1     ; 0          ;
+; Early Slack - Fit Attempt 1        ; 2147483639 ;
+; Auto Fit Point 5 - Fit Attempt 1   ; ff         ;
+; Mid Wire Use - Fit Attempt 1       ; 0          ;
+; Mid Slack - Fit Attempt 1          ; 2147483639 ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff         ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff         ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff         ;
+; Auto Fit Point 5 - Fit Attempt 1   ; ff         ;
+; Mid Wire Use - Fit Attempt 1       ; 0          ;
+; Mid Slack - Fit Attempt 1          ; 2147483639 ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff         ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff         ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff         ;
+; Late Wire Use - Fit Attempt 1      ; 0          ;
+; Late Slack - Fit Attempt 1         ; 2147483639 ;
+; Peak Regional Wire - Fit Attempt 1 ; 0.000      ;
+; Auto Fit Point 7 - Fit Attempt 1   ; ff         ;
+; Time - Fit Attempt 1               ; 1          ;
++------------------------------------+------------+
+
+
 +--------------------------------------------------+
-; Advanced Data - Placement                        ;
-+-------------------------------------+------------+
-; Name                                ; Value      ;
-+-------------------------------------+------------+
-; Auto Fit Point 2 - Fit Attempt 1    ; ff         ;
-; Early Wire Use - Fit Attempt 1      ; 0          ;
-; Early Slack - Fit Attempt 1         ; 2147483639 ;
-; Auto Fit Point 5 - Fit Attempt 1    ; ff         ;
-; Mid Wire Use - Fit Attempt 1        ; 0          ;
-; Mid Slack - Fit Attempt 1           ; 2147483639 ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff         ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff         ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff         ;
-; Auto Fit Point 5 - Fit Attempt 1    ; ff         ;
-; Mid Wire Use - Fit Attempt 1        ; 0          ;
-; Mid Slack - Fit Attempt 1           ; 2147483639 ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff         ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff         ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff         ;
-; Late Wire Use - Fit Attempt 1       ; 0          ;
-; Late Slack - Fit Attempt 1          ; 2147483639 ;
-; Peak Regional Wire - Fit Attempt 1  ; 0.000      ;
-; Auto Fit Point 7 - Fit Attempt 1    ; ff         ;
-; Time - Fit Attempt 1                ; 1          ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.016      ;
-+-------------------------------------+------------+
-
-
-+---------------------------------------------------+
-; Advanced Data - Routing                           ;
-+-------------------------------------+-------------+
-; Name                                ; Value       ;
-+-------------------------------------+-------------+
-; Early Wire Use - Fit Attempt 1      ; 0           ;
-; Peak Regional Wire - Fit Attempt 1  ; 0           ;
-; Early Slack - Fit Attempt 1         ; 2147483639  ;
-; Mid Slack - Fit Attempt 1           ; 2147483639  ;
-; Late Slack - Fit Attempt 1          ; -2147483648 ;
-; Late Wire Use - Fit Attempt 1       ; 0           ;
-; Time - Fit Attempt 1                ; 0           ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.016       ;
-+-------------------------------------+-------------+
+; Advanced Data - Routing                          ;
++------------------------------------+-------------+
+; Name                               ; Value       ;
++------------------------------------+-------------+
+; Early Slack - Fit Attempt 1        ; 2147483639  ;
+; Mid Slack - Fit Attempt 1          ; 2147483639  ;
+; Late Slack - Fit Attempt 1         ; -2147483648 ;
+; Early Wire Use - Fit Attempt 1     ; 0           ;
+; Peak Regional Wire - Fit Attempt 1 ; 0           ;
+; Late Wire Use - Fit Attempt 1      ; 0           ;
+; Time - Fit Attempt 1               ; 0           ;
++------------------------------------+-------------+
 
 
 +-----------------+
@@ -1260,7 +1270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Sun Oct 28 19:24:43 2018
+    Info: Processing started: Mon Oct 29 10:01:59 2018
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off seven_seg_comp -c seven_seg_comp
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Selected device EP2C35F672C6 for design "seven_seg_comp"
@@ -1282,9 +1292,9 @@ Warning: No exact pin location assignment(s) for 10 pins of 10 total pins
     Info: Pin Dispaly[2] not assigned to an exact location on the device
     Info: Pin Dispaly[1] not assigned to an exact location on the device
     Info: Pin Dispaly[0] not assigned to an exact location on the device
-    Info: Pin C[0] not assigned to an exact location on the device
-    Info: Pin C[2] not assigned to an exact location on the device
     Info: Pin C[1] not assigned to an exact location on the device
+    Info: Pin C[2] not assigned to an exact location on the device
+    Info: Pin C[0] not assigned to an exact location on the device
 Info: Fitter is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
 Info: Starting register packing
@@ -1326,14 +1336,11 @@ Warning: Found 7 output pins without output pin load capacitance assignment
     Info: Pin "Dispaly[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "Dispaly[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
-Warning: Following 2 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results
-    Info: Pin Dispaly[5] has GND driving its datain port
-    Info: Pin Dispaly[4] has GND driving its datain port
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Generated suppressed messages file E:/EDA/seven_segment_decoder_comp/seven_seg_comp.fit.smsg
-Info: Quartus II Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 361 megabytes
-    Info: Processing ended: Sun Oct 28 19:24:47 2018
+Info: Quartus II Fitter was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 345 megabytes
+    Info: Processing ended: Mon Oct 29 10:02:03 2018
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

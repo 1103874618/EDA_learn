@@ -29,15 +29,28 @@ ARCHITECTURE five_char_dis_arch OF five_char_dis IS
 
 SIGNAL M : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL M_S_one : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_two : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_three : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_four : STD_LOGIC_VECTOR(2 DOWNTO 0);
 
 BEGIN
   M0: five_to_one_mult_comp PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M);--signal M
   --SW has use but not declared ?  ..bcause the arch's blong is wrong .....
   M1: five_to_one_mult_comp PORT MAP (SW(17 DOWNTO 15), SW(2 DOWNTO 0),SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3),  M_S_one);
 
-  H0: seven_seg_comp PORT MAP (M, HEX0);--signal M选择
+  M2: five_to_one_mult_comp PORT MAP (SW(17 DOWNTO 15),  SW(5 DOWNTO 3),SW(2 DOWNTO 0),SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6),  M_S_two);
 
+  M3: five_to_one_mult_comp PORT MAP (SW(17 DOWNTO 15), SW(8 DOWNTO 6),  SW(5 DOWNTO 3),SW(2 DOWNTO 0),SW(14 DOWNTO  12), SW(11 DOWNTO 9),  M_S_three);
+
+  M4: five_to_one_mult_comp PORT MAP (SW(17 DOWNTO 15),SW(11 DOWNTO 9), SW(8 DOWNTO 6),  SW(5 DOWNTO 3),SW(2 DOWNTO 0),SW(14 DOWNTO  12),  M_S_four);
+
+  H0: seven_seg_comp PORT MAP (M, HEX0);--signal M选择
   H1: seven_seg_comp PORT MAP (M_S_one, HEX1);
+  H2: seven_seg_comp PORT MAP (M_S_two, HEX2);
+  H3: seven_seg_comp PORT MAP (M_S_three, HEX3);
+  H4: seven_seg_comp PORT MAP (M_S_four, HEX4);
+
+
 END five_char_dis_arch;
 
 

@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for seven_seg_comp
-Sun Oct 28 19:24:52 2018
+Mon Oct 29 10:02:07 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+------+------------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From ; To         ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+------+------------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 9.377 ns    ; C[1] ; Dispaly[3] ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 11.852 ns   ; C[0] ; Dispaly[1] ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;      ;            ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+------+------------+------------+----------+--------------+
 
@@ -98,14 +98,24 @@ applicable agreement for further details.
 +-------+-------------------+-----------------+------+------------+
 ; Slack ; Required P2P Time ; Actual P2P Time ; From ; To         ;
 +-------+-------------------+-----------------+------+------------+
-; N/A   ; None              ; 9.377 ns        ; C[1] ; Dispaly[3] ;
-; N/A   ; None              ; 9.249 ns        ; C[1] ; Dispaly[1] ;
-; N/A   ; None              ; 9.249 ns        ; C[1] ; Dispaly[2] ;
-; N/A   ; None              ; 8.888 ns        ; C[1] ; Dispaly[0] ;
-; N/A   ; None              ; 6.292 ns        ; C[2] ; Dispaly[3] ;
-; N/A   ; None              ; 6.195 ns        ; C[2] ; Dispaly[1] ;
-; N/A   ; None              ; 6.195 ns        ; C[2] ; Dispaly[2] ;
-; N/A   ; None              ; 5.135 ns        ; C[2] ; Dispaly[6] ;
+; N/A   ; None              ; 11.852 ns       ; C[0] ; Dispaly[1] ;
+; N/A   ; None              ; 11.842 ns       ; C[0] ; Dispaly[2] ;
+; N/A   ; None              ; 10.533 ns       ; C[0] ; Dispaly[0] ;
+; N/A   ; None              ; 9.567 ns        ; C[0] ; Dispaly[5] ;
+; N/A   ; None              ; 9.317 ns        ; C[0] ; Dispaly[4] ;
+; N/A   ; None              ; 9.312 ns        ; C[0] ; Dispaly[3] ;
+; N/A   ; None              ; 7.932 ns        ; C[1] ; Dispaly[1] ;
+; N/A   ; None              ; 7.922 ns        ; C[1] ; Dispaly[2] ;
+; N/A   ; None              ; 6.682 ns        ; C[2] ; Dispaly[0] ;
+; N/A   ; None              ; 6.657 ns        ; C[1] ; Dispaly[0] ;
+; N/A   ; None              ; 5.722 ns        ; C[2] ; Dispaly[5] ;
+; N/A   ; None              ; 5.686 ns        ; C[1] ; Dispaly[5] ;
+; N/A   ; None              ; 5.649 ns        ; C[2] ; Dispaly[6] ;
+; N/A   ; None              ; 5.519 ns        ; C[1] ; Dispaly[6] ;
+; N/A   ; None              ; 5.472 ns        ; C[2] ; Dispaly[4] ;
+; N/A   ; None              ; 5.468 ns        ; C[2] ; Dispaly[3] ;
+; N/A   ; None              ; 5.436 ns        ; C[1] ; Dispaly[4] ;
+; N/A   ; None              ; 5.433 ns        ; C[1] ; Dispaly[3] ;
 +-------+-------------------+-----------------+------+------------+
 
 
@@ -115,18 +125,18 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Sun Oct 28 19:24:52 2018
+    Info: Processing started: Mon Oct 29 10:02:07 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off seven_seg_comp -c seven_seg_comp --timing_analysis_only
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info: Longest tpd from source pin "C[1]" to destination pin "Dispaly[3]" is 9.377 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.860 ns) = 0.860 ns; Loc. = PIN_C6; Fanout = 3; PIN Node = 'C[1]'
-    Info: 2: + IC(4.846 ns) + CELL(0.420 ns) = 6.126 ns; Loc. = LCCOMB_X1_Y34_N0; Fanout = 1; COMB Node = 'Equal3~0'
-    Info: 3: + IC(0.462 ns) + CELL(2.789 ns) = 9.377 ns; Loc. = PIN_E5; Fanout = 0; PIN Node = 'Dispaly[3]'
-    Info: Total cell delay = 4.069 ns ( 43.39 % )
-    Info: Total interconnect delay = 5.308 ns ( 56.61 % )
+Info: Longest tpd from source pin "C[0]" to destination pin "Dispaly[1]" is 11.852 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.850 ns) = 0.850 ns; Loc. = PIN_B11; Fanout = 4; PIN Node = 'C[0]'
+    Info: 2: + IC(4.829 ns) + CELL(0.275 ns) = 5.954 ns; Loc. = LCCOMB_X31_Y35_N22; Fanout = 2; COMB Node = 'Dispaly~15'
+    Info: 3: + IC(3.130 ns) + CELL(2.768 ns) = 11.852 ns; Loc. = PIN_AA12; Fanout = 0; PIN Node = 'Dispaly[1]'
+    Info: Total cell delay = 3.893 ns ( 32.85 % )
+    Info: Total interconnect delay = 7.959 ns ( 67.15 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 216 megabytes
-    Info: Processing ended: Sun Oct 28 19:24:52 2018
+    Info: Processing ended: Mon Oct 29 10:02:07 2018
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

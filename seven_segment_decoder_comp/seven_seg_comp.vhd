@@ -1,4 +1,3 @@
-
 LIBRARY ieee;
 USE ieee.STD_LOGIC_1164.all;
 
@@ -11,10 +10,10 @@ END seven_seg_comp;
 ARCHITECTURE Behavior OF seven_seg_comp IS
 BEGIN
 
-Dispaly<="1001000" WHEN C(2 DOWNTO 1)="000" ELSE --H
-         "0110000" WHEN C(2 DOWNTO 1)="001" ELSE --E
-         "1110001" WHEN C(2 DOWNTO 1)="010" OR C(2 DOWNTO 1)="011" ELSE --L
-         "0000001" WHEN C(2 DOWNTO 1)="100" ELSE --O
+Dispaly<="1001000" WHEN C="000" ELSE --H
+         "0110000" WHEN C="001" ELSE --E
+         "1110001" WHEN C="010" OR C="011" ELSE --L
+         "0000001" WHEN C="100" ELSE --O
          "1111111";
 
 END Behavior;

@@ -75,6 +75,9 @@ USR
 # hierarchies {
 five_to_one_mult_comp:M0
 five_to_one_mult_comp:M1
+five_to_one_mult_comp:M2
+five_to_one_mult_comp:M3
+five_to_one_mult_comp:M4
 }
 # lmf
 ..|..|quatus|quartus|lmf|maxplus2.lmf
@@ -94,7 +97,7 @@ ON
 # case_insensitive
 # source_file
 ..|seven_segment_decoder_comp|seven_seg_comp.vhd
-12124769291e769dc5c6a437d1df83
+8e7d7ced5e3540f0c49325b5d7cae349
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -119,6 +122,9 @@ USR
 # hierarchies {
 seven_seg_comp:H0
 seven_seg_comp:H1
+seven_seg_comp:H2
+seven_seg_comp:H3
+seven_seg_comp:H4
 }
 # lmf
 ..|..|quatus|quartus|lmf|maxplus2.lmf
@@ -138,7 +144,7 @@ ON
 # case_insensitive
 # source_file
 five_char_dis.vhd
-93f947e1f0f0fbf9b5844663de8f74d8
+ca65454ec044b05a918c63f6875343
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

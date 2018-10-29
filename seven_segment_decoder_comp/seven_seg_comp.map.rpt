@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seven_seg_comp
-Sun Oct 28 19:24:41 2018
+Mon Oct 29 10:01:58 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -13,7 +13,8 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Analysis & Synthesis Messages
+  8. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Analysis & Synthesis Messages
 
 
 
@@ -39,13 +40,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 28 19:24:41 2018    ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 29 10:01:58 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; seven_seg_comp                           ;
 ; Top-level Entity Name              ; seven_seg_comp                           ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 2                                        ;
-;     Total combinational functions  ; 2                                        ;
+; Total logic elements               ; 5                                        ;
+;     Total combinational functions  ; 5                                        ;
 ;     Dedicated logic registers      ; 0                                        ;
 ; Total registers                    ; 0                                        ;
 ; Total pins                         ; 10                                       ;
@@ -145,16 +146,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2     ;
+; Estimated Total logic elements              ; 5     ;
 ;                                             ;       ;
-; Total combinational functions               ; 2     ;
+; Total combinational functions               ; 5     ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 3     ;
 ;     -- <=2 input functions                  ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2     ;
+;     -- normal mode                          ; 5     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
@@ -162,10 +163,10 @@ applicable agreement for further details.
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 10    ;
-; Maximum fan-out node                        ; C[2]  ;
-; Maximum fan-out                             ; 3     ;
-; Total fan-out                               ; 9     ;
-; Average fan-out                             ; 0.75  ;
+; Maximum fan-out node                        ; C[1]  ;
+; Maximum fan-out                             ; 5     ;
+; Total fan-out                               ; 20    ;
+; Average fan-out                             ; 1.33  ;
 +---------------------------------------------+-------+
 
 
@@ -174,7 +175,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |seven_seg_comp            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |seven_seg_comp     ; work         ;
+; |seven_seg_comp            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |seven_seg_comp     ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -194,30 +195,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |seven_seg_comp|Dispaly~8  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Sun Oct 28 19:24:40 2018
+    Info: Processing started: Mon Oct 29 10:01:57 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seven_seg_comp -c seven_seg_comp
 Info: Found 2 design units, including 1 entities, in source file seven_seg_comp.vhd
     Info: Found design unit 1: seven_seg_comp-Behavior
     Info: Found entity 1: seven_seg_comp
 Info: Elaborating entity "seven_seg_comp" for the top level hierarchy
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Dispaly[5]" is stuck at GND
-    Warning (13410): Pin "Dispaly[4]" is stuck at GND
-Warning: Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "C[0]"
-Info: Implemented 12 device resources after synthesis - the final resource count might be different
+Info: Implemented 15 device resources after synthesis - the final resource count might be different
     Info: Implemented 3 input pins
     Info: Implemented 7 output pins
-    Info: Implemented 2 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 271 megabytes
-    Info: Processing ended: Sun Oct 28 19:24:41 2018
+    Info: Implemented 5 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 268 megabytes
+    Info: Processing ended: Mon Oct 29 10:01:58 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

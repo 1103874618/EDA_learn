@@ -1,19 +1,25 @@
 |seven_seg_comp
-Dispaly[6] <= Dispaly~11.DB_MAX_OUTPUT_PORT_TYPE
-Dispaly[5] <= Dispaly~10.DB_MAX_OUTPUT_PORT_TYPE
-Dispaly[4] <= Dispaly~9.DB_MAX_OUTPUT_PORT_TYPE
-Dispaly[3] <= Dispaly~8.DB_MAX_OUTPUT_PORT_TYPE
-Dispaly[2] <= Dispaly~7.DB_MAX_OUTPUT_PORT_TYPE
-Dispaly[1] <= Dispaly~6.DB_MAX_OUTPUT_PORT_TYPE
-Dispaly[0] <= Dispaly~5.DB_MAX_OUTPUT_PORT_TYPE
-C[0] => ~NO_FANOUT~
-C[1] => Equal0.IN0
-C[1] => Equal1.IN0
-C[1] => Equal2.IN1
+C[0] => Equal0.IN0
+C[0] => Equal1.IN0
+C[0] => Equal2.IN1
+C[0] => Equal3.IN2
+C[0] => Equal4.IN0
+C[1] => Equal0.IN1
+C[1] => Equal1.IN2
+C[1] => Equal2.IN2
 C[1] => Equal3.IN0
-C[2] => Equal0.IN1
+C[1] => Equal4.IN1
+C[2] => Equal0.IN2
 C[2] => Equal1.IN1
 C[2] => Equal2.IN0
 C[2] => Equal3.IN1
+C[2] => Equal4.IN2
+Dispaly[6] <= Dispaly~12.DB_MAX_OUTPUT_PORT_TYPE
+Dispaly[5] <= Dispaly~11.DB_MAX_OUTPUT_PORT_TYPE
+Dispaly[4] <= Dispaly~10.DB_MAX_OUTPUT_PORT_TYPE
+Dispaly[3] <= Dispaly~9.DB_MAX_OUTPUT_PORT_TYPE
+Dispaly[2] <= Dispaly~8.DB_MAX_OUTPUT_PORT_TYPE
+Dispaly[1] <= Dispaly~7.DB_MAX_OUTPUT_PORT_TYPE
+Dispaly[0] <= Dispaly~6.DB_MAX_OUTPUT_PORT_TYPE
 
 
