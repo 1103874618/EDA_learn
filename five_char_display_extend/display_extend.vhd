@@ -1,0 +1,129 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY display_extend IS
+PORT(
+  SW:IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+  HEX0:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX1:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX2:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX3:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX4:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX5:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX6:OUT STD_LOGIC_VECTOR(0 TO 6);
+  HEX7:OUT STD_LOGIC_VECTOR(0 TO 6);
+
+  LEDR:OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+  LEDG:OUT STD_LOGIC_VECTOR(8 DOWNTO 0)
+);
+END display_extend;
+
+ARCHITECTURE five_char_dis_arch OF display_extend IS
+  COMPONENT five_to_one_mult_extend 
+    PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT five_to_one_mult_extend2
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT five_to_one_mult_extend3
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+  
+  COMPONENT five_to_one_mult_extend4
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT five_to_one_mult_extend5
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT five_to_one_mult_extend6
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT five_to_one_mult_extend7
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT five_to_one_mult_extend8
+  PORT(
+      S,U,V,W,X,Y:IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M:OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+    );
+  END COMPONENT;
+
+  COMPONENT seven_seg_comp
+    PORT(
+      C:IN STD_LOGIC_VECTOR(2 DOWNTO 0 );
+      Dispaly: OUT STD_LOGIC_VECTOR(0 TO 6)--0为灯亮
+    );
+  END COMPONENT;
+
+SIGNAL M : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_one : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_two : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_three : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_four : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_five : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_six : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL M_S_seven : STD_LOGIC_VECTOR(2 DOWNTO 0);
+
+BEGIN
+  M0: five_to_one_mult_extend PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M);
+
+  M1: five_to_one_mult_extend2 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_one);
+
+  M2: five_to_one_mult_extend3 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_two);
+
+  M3: five_to_one_mult_extend4 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_three);
+
+  M4: five_to_one_mult_extend5 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_four);
+
+  M5: five_to_one_mult_extend6 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_five);
+
+  M6: five_to_one_mult_extend7 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_six);
+
+  M7: five_to_one_mult_extend8 PORT MAP (SW(17 DOWNTO 15), SW(14 DOWNTO  12), SW(11 DOWNTO 9), SW(8 DOWNTO 6), SW(5 DOWNTO 3), SW(2 DOWNTO 0), M_S_seven);
+
+
+
+  H0: seven_seg_comp PORT MAP (M, HEX0);--signal M选择
+  H1: seven_seg_comp PORT MAP (M_S_one, HEX1);
+  H2: seven_seg_comp PORT MAP (M_S_two, HEX2);
+  H3: seven_seg_comp PORT MAP (M_S_three, HEX3);
+  H4: seven_seg_comp PORT MAP (M_S_four, HEX4);
+  H5: seven_seg_comp PORT MAP (M_S_five, HEX5);
+  H6: seven_seg_comp PORT MAP (M_S_six, HEX6);
+  H7: seven_seg_comp PORT MAP (M_S_seven, HEX7);
+
+
+  LEDR<=SW;
+
+
+END five_char_dis_arch;
+
+
+
