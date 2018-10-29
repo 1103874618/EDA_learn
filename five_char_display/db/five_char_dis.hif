@@ -144,7 +144,7 @@ ON
 # case_insensitive
 # source_file
 five_char_dis.vhd
-ca65454ec044b05a918c63f6875343
+6f70d593d2bb2d873ee9d7aaba7f948
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
